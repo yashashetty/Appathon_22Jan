@@ -1,0 +1,87 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DashBoardScreen">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="6dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:elevation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="@color/white">
+            <Button android:id="@+id/create_survey"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/create_survey"
+                android:background="@drawable/circle_icon"
+                />
+
+            <Button android:id="@+id/edit_survey"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:text="@string/view_survey"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/circle_icon" />
+        </LinearLayout>
+
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+
+            app:tabMode="fixed"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp"
+            app:tabTextColor="@android:color/darker_gray"
+
+            app:tabSelectedTextColor="#000000"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "926617798522",
+    "firebase_url": "https://voiceofcustomer-214e1.firebaseio.com",
+    "project_id": "voiceofcustomer-214e1",
+    "storage_bucket": "voiceofcustomer-214e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926617798522:android:ebb69c4e80b6c218",
+        "android_client_info": {
+          "package_name": "voc.appathon.com.voiceofcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926617798522-d8vl48841nrobpdfls2g66dpshorv9ui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPQvIR2iHZlL0_8YtqLGygQP-hOUE0Q80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_launcher"
+            android:title="@string/survey" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_launcher"
+            android:title="@string/open_survey" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_launcher"
+            android:title="@string/Closed_survey" />
+
+        <item
+            android:id="@+id/navigation_subheader"
+            android:title="@string/survey">
+            <menu>
+                <item
+                    android:id="@+id/navigation_sub_item_1"
+                    android:icon="@drawable/ic_launcher"
+                    android:title="@string/open_survey" />
+                <item
+                    android:id="@+id/navigation_sub_item_2"
+                    android:icon="@drawable/ic_launcher"
+                    android:title="@string/Closed_survey" />
+            </menu>
+        </item>
+    </group>
+</menu>
